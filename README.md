@@ -1,10 +1,11 @@
-Send Firebase Cloud Messaging notifications 
--------------------------------------------
+Firebase Cloud Messaging Notifications Quick Start Guide
+--------------------------------------------------------
 
 This sample demonstrates how to send a Firebase Cloud Messaging (FCM) notification from a Realtime Database triggered Function. The sample also features a Web UI to experience the FCM notification.
 
 
-### Functions Code
+Functions Code
+--------------
 
 See file [functions/index.js](functions/index.js) for the code.
 
@@ -13,7 +14,8 @@ Sending the notification is done using the [Firebase Admin SDK](https://www.npmj
 The dependencies are listed in [functions/package.json](functions/package.json).
 
 
-### Sample Database Structure
+Sample Database Structure
+-------------------------
 
 Users sign into the app and are requested to enable notifications on their browsers. If they successfully enable notifications the device token is saved into the datastore under `/users/$uid/notificationTokens`.:
 
@@ -44,13 +46,13 @@ If a user starts following another user we'll write to `/followers/$followedUid/
 
 ```
 
-
-### Trigger rules
+Trigger rules
+-------------
 
 The function triggers every time the value of a follow flag changes at `/followers/$followedUid/$followerUid`.
 
-
-### Deploy and test
+Deploy and test
+---------------
 
 This sample comes with a web-based UI for testing the function. To test it out:
 
@@ -63,6 +65,7 @@ This sample comes with a web-based UI for testing the function. To test it out:
  1. Deploy your project using `firebase deploy`
  1. Open the app using `firebase open hosting:site`, this will open a browser. 
 
-### License
+License
+-------
 
 © Chris Oung, 2018 Licensed under an [Apache-2](https://github.com/chrisoung/fcm-notifications/blob/master/LICENSE) license.
