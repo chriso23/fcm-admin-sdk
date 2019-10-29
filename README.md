@@ -1,7 +1,7 @@
 Firebase Cloud Messaging Notifications Web Quickstart 
 -----------------------------------------------------
 
-This sample demonstrates how to send a Firebase Cloud Messaging (FCM) notification from a Realtime Database triggered Function. The sample also features a Web UI to experience the FCM notification.
+This sample demonstrates how to send a Firebase Cloud Messaging (FCM) notification from a Realtime Database triggered Function. The sample app features a Web UI to experience the FCM notification.
 
 
 Functions Code
